@@ -1,7 +1,14 @@
 <h1>Hello world :)</h1>
 <h2>App tittle: {{ title }}</h2>
 
-<div class="container-products">
-    <!-- The loop for is INSIDE of component -->
-    <app-product *ngFor="let product of products" [product]="product" />
-</div>
+<h2>My Menu 👇🏽👇🏽</h2>
+<ul>
+    <li>
+        <a routerLink="/products">Products</a>
+    </li>
+    <li>
+        <a routerLink="/contact">Contact</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
