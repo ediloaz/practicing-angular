@@ -13,7 +13,7 @@ import { ProductComponent } from './components/product/product.component';
     ProductComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     NgOptimizedImage
